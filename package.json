@@ -1,0 +1,34 @@
+{
+  "name": "learning-mongoose",
+  "version": "0.0.1",
+  "description": "This is a repo for the things I'm going to learn about Mongoose https://github.com/LearnBoost/mongoose and APIs",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaquindev/learning-mongoose.git"
+  },
+  "keywords": [
+    "mongoose",
+    "nodejs",
+    "express"
+  ],
+  "author": "joaquindev",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/joaquindev/learning-mongoose/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.3.0",
+    "time-grunt": "~0.2.9",
+    "mocha": "~1.17.1",
+    "grunt-mocha-test": "~0.9.0",
+    "chai": "~1.9.0"
+  }
+}
