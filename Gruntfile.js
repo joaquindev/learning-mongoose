@@ -6,6 +6,11 @@ module.exports = function(grunt){
   require('time-grunt')(grunt);
 
   grunt.initConfig({
+    express: {
+      options: {
+        port: process.env.PORT || 3000
+      }
+    }, 
     mochaTest: {
       test: {
         options: {

@@ -18,6 +18,7 @@ else if('test' === app.get('env')){
   database = 'test';
 }
 
+require('./routes');
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Listening on ' + app.get('port'));
