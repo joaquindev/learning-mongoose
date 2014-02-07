@@ -1,6 +1,7 @@
 var express = require('express');
 var app     = express(); 
 var http    = require('http'); 
+var mongoose= require('mongoose');
 
 app.set('port', process.env.PORT || 3000);
 app.use(express.favicon());

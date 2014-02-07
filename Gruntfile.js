@@ -9,8 +9,32 @@ module.exports = function(grunt){
     express: {
       options: {
         port: process.env.PORT || 3000
+      }, 
+      dev: {
+        options: {
+          script: '<%= ToDoList.server %>/app.js', 
+          debug: true
+        }
+      }, 
+      test: {
+        options: {
+          script: '<%= ToDoList.server %>/app.js',
+          port: 5000,
+          debug: true
+        } 
+      }, 
+      prod: {
+        options: {
+          script: '<%= ToDoList.dist %>/app.js', 
+          node_env: 'production'
+        }
       }
     }, 
+    open:{
+      server: {
+        url: 'http://localhost:<%= express.options.port %>'
+      }
+    },
     mochaTest: {
       test: {
         options: {
