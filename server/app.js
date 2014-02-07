@@ -3,6 +3,7 @@ var app     = express();
 var http    = require('http'); 
 var mongoose= require('mongoose');
 
+
 app.set('port', process.env.PORT || 3000);
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -19,6 +20,7 @@ else if('test' === app.get('env')){
   database = 'test';
 }
 
+require('./models/task');
 require('./routes');
 
 http.createServer(app).listen(app.get('port'), function(){
