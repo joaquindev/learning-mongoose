@@ -13,8 +13,8 @@ module.exports = function(grunt){
         }, 
         src: ['test/{,*/}*.spec.js']
       }
-    } 
-    /*mocha_istanbul: {
+    }, 
+    mocha_istanbul: {
       coverage: {
         src: 'test', //the folder not the files
         options: {}
@@ -25,7 +25,7 @@ module.exports = function(grunt){
           coverage: true
         }
       }
-    }*/
+    }
   });
 
   grunt.event.on('coverage', require('coveralls').handleInput); // Check below
