@@ -21,7 +21,7 @@ else if('test' === app.get('env')){
 }
 
 require('./models/task');
-require('./routes');
+require('./routes')(app);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Listening on ' + app.get('port'));
